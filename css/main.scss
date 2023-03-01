@@ -1,33 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 $Jaune: #F8C471;
+$police1: "Be Vietnam Pro";
+$police2: "Mansalva";
+$main: pointer;
+
 
 body {
-    background-image:url(../image/background\ BODY.png)
-}
-
-
-nav{
-    background-color: $Jaune;
-    flex-direction: row;
+    background-image:url(../image/background-image.png);
+    background-repeat: no-repeat;
+    font-family: $police1;
     
-}
+ }
 
-ul {
-    list-style-type: none;
+
+.mobile {
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    width: 100%;
 }
 
- li {
-    
+.desktop{
+    display: none;
 }
+
+.icone-mobile {
+   justify-content: space-around;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+    width: 100%;
+
+}
+
+
+
+ 
+
 
 @import "accueil.scss";
 @import "login.scss";
 @import "suivi.scss";
 @import "projet.scss";
 @import "partenaire.scss";
+
+
+@media ( min-width : 768px ) {
+   
+    .desktop {
+        /*position: fixed;
+        width: 100%;
+        bottom: 0;*/
+    
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+
+    nav {
+        background-color: $Jaune;
+        display: flex;
+    }
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        cursor: $main;
+    }
+    
+    
+    
+    .connexion-partenaire {
+        font-size: 30px;
+        display: flex;
+        justify-content: right;
+        
+    
+    }
+    
+    footer {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+       
+     }
+     
+     footer ul {
+         list-style-type: none;
+         display: flex;
+         justify-content: space-between;
+         width: 120%;
+         cursor: pointer;
+     }
+     
+     .reseaux{
+         display: flex;
+     }
+
+     .reseau {
+         display: flex;
+         justify-content: flex-end;
+         color: black;
+         padding:15px;
+         font-size: 2 rem;
+         border: 2px solid;
+         border-radius: 50px;
+     }
+
+     .mobile {
+        display: none;
+     }
+     
+    
+ }
+    
+
+
+ 
+
+       
+
