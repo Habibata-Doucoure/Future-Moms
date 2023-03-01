@@ -6,8 +6,8 @@
 $Jaune: #F8C471;
 
 body {
-    background-image:url(../image/background\ BODY.png)
-}
+    background-image:url(../image/background-image.png);
+}  
 
 
 nav{
@@ -22,9 +22,9 @@ ul {
     justify-content: space-between;
 }
 
- li {
+ 
     
-}
+
 
 @import "accueil.scss";
 @import "login.scss";
