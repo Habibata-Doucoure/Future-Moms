@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="//kit.fontawesome.com/87cee28510.js" crossorigin="anonymous"></script>
+
     </head>
     
 
     <body>
 
-        <!-- nav: connexion = logo-->
-        <nav>
+       
+        <nav class="mobile">
+            <div class="icone-mobile">
+                <button class="icone-nav" onclick="window.location.href ='https://waytolearnx.com/2019/07/comment-creer-un-lien-avec-un-bouton-html.html' ;"><i class="fa-solid fa-children"></i></button>
+                <button class="icone-nav"><i class="fa-solid fa-calendar-days"></i> </button>
+                <button class="icone-nav"><i class="fa-solid fa-list-check"></i></button>
+                <button class="icone-nav"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+             
+        </nav>
+
+
+         <!-- nav: connexion = logo-->
+        <nav class="desktop">
             <ul> 
                 <li>Suivi personnalisé</li>
                 <li>Projet de naissance</li>
                 <li>TOI+MOI</li>
                 <li>Blog</li>
                 <li>Newsletter</li>
-                <li class="connexion"></li>
+                <li class="connexion"><i class="fa-solid fa-user-group"></i></li>
             </ul>  
+
         </nav>
 
         <section></section>
         
-        <footer>
-            <ul> 
-                <li>Contact</li>
-                <li>FAQ</li>
-                <li>Mentions légales</li>
-                <li>Politique de confidentialité </li>
-                <li class="reseaux">
-                    <div class="facebook"></div>
-                    <div class="twitter"></div>
-                    <div class="insta"></div>
-                </li>
-            </ul>   
+        <footer class="desktop">
+            <div class="rgpd">
+                <ul class="footerList">
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Mentions légales</li>
+                    <li>Politique de confidentialité </li>
+                </ul>
+            </div>
+            
+            <div class="reseaux">
+            <ul>
+                <li class="reseau"><i class="fa-brands fa-instagram"></i></li>
+                <li class="reseau"><i class="fa-brands fa-twitter"></i></li>
+                <li class="reseau"><i class="fa-brands fa-facebook-f"></i></li>
+            </ul>
+        </div>
         </footer>
+
+
+           
+    
 
     </body>
 
