@@ -11,13 +11,19 @@ $police1: "Roboto Serif";
 $police2: "Mansalva";
 
 
+$police1: "Roboto Serif";
+$police2: "Mansalva";
+
+
 
 body {
     background-image:url("../image/background-image.png");
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: $police1;
     
  }
+ 
 
  .en-tete{
     background-color: #F8C471;
@@ -25,7 +31,7 @@ body {
     gap: 15px;
     display: flex;
     justify-content: space-between;
-    
+ 
     
 }
 
@@ -62,6 +68,46 @@ body {
 
 }
 
+/* propriétés pour que le lien hypertexte ne rendent pas les icones bleu
+ et que la ligne du lien ne soit pas là*/
+.icone-mobile a {
+    text-decoration: none;
+     color: black;
+}
+
+.en-tete a {
+    text-decoration: none;
+     color: black;
+}
+
+.en-tete-texte {
+    font-size: 25px;
+}
+
+/* pour que le nom du site et le logo ne soit pas collé aux bords*/
+.en-tete {
+  padding: 5px;
+}
+
+.icone-mobile a{
+    color: black;
+    text-decoration: none;
+}
+
+.en-tete a{
+    color: black;
+    text-decoration: none;
+}
+
+.en-tete-texte{
+    font-size: 25px;
+}
+
+.en-tete{
+    padding: 10px;
+}
+
+
 .icone-mobile a{
     color: black;
     text-decoration: none;
@@ -86,6 +132,9 @@ body {
 @import "suivi.scss";
 @import "projet.scss";
 @import "partenaire.scss";
+@import "formulaire.scss";
+
+
 
 
 
@@ -98,7 +147,9 @@ body {
         display: flex;
         height: 60px;
         align-items: center;
-        justify-content: space-around;     
+        justify-content: space-around;
+        height: 60px;
+      
     }
 
     nav {
@@ -106,7 +157,9 @@ body {
         display: flex;
     }
 
-    .desktop a{
+ /*Enlever le soulignement du lien hypertexte et enlever la couleur bleu du lien*/
+    .desktop a {
+
         text-decoration: none;
         color: black;
     }
@@ -152,17 +205,17 @@ body {
      
      .reseaux{
          display: flex;
-         
      }
 
      .reseau {
          display: flex;
          justify-content: flex-end;
          color: black;
-         padding:10px;
+         padding: 10px;
          border: 2px solid;
          border-radius: 50px;
-         
+        
+
      }
 
 
@@ -170,15 +223,8 @@ body {
         display: none;
      }
      
-
+     .en-tete {
+        display: none;
+     }
+    
  }
-
-
-
-
-
-
-
- 
-
-       
