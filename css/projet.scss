@@ -1,0 +1,63 @@
+
+
+
+
+section {
+    display:flex;
+    justify-content: center;
+    
+}
+
+
+
+.titre-projet {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+    
+}
+
+
+.icone-projet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    gap: 10%;
+    margin-top: 50px; /*ce margin m'a permis de créer un espace entre le titre et les items*/
+  
+}
+
+
+.cercle-projet {
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.colonne-projet {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    height: 130px;
+   
+}
+
+p {
+    cursor: pointer;
+    text-align: center;
+}
+
+.texte-projet {
+    display: flex;
+    justify-content: space-between;
+}
+

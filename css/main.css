@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 * {
@@ -7,138 +8,131 @@
 
 body {
   background-image: url(../image/background-image.png);
+  background-repeat: no-repeat;
+  font-family: "Be Vietnam Pro";
 }
 
-nav {
-  background-color: #F8C471;
+.mobile {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.icone-mobile {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  width: 100%;
 }
 
-ul {
-  list-style-type: none;
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.titre-projet {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.icone-projet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10%;
+  margin-top: 50px; /*ce margin m'a permis de créer un espace entre le titre et les items*/
+}
+
+.cercle-projet {
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+
+.colonne-projet {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: flex;
+  margin: auto;
+  height: 130px;
+}
+
+p {
+  cursor: pointer;
+  text-align: center;
+}
+
+.texte-projet {
   display: flex;
   justify-content: space-between;
 }
 
-.suivi-titre {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Mansalva";
-  margin: auto;
-  padding-bottom: 50px;
-}
-
-.suivi-section {
-  padding-top: 60px;
-}
-
-.suivi-calendrier {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.calendrier {
-  background-color: white;
-  width: 30%;
-  height: 300px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.h3 {
-  font-size: 25px;
-  border: 5px solid rgba(0, 0, 0, 0.251);
-  border-radius: 10px;
-  text-align: center;
-  margin: 15px;
-}
-
-.td {
-  border: 1px solide rgb(0, 0, 0);
-  border-radius: 100%;
-  padding: 3px;
-  font-size: 15px;
-  margin: 0px;
-}
-
-.event1 {
-  background-color: rgb(211, 30, 94);
-}
-
-.event2 {
-  background-color: rgba(211, 139, 30, 0.669);
-}
-
-.event3 {
-  background-color: rgb(30, 199, 211);
-}
-
-.suivi-text {
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 250px;
-  height: 50px;
-  font-size: 1.7em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*.suivi-image{
-    background-image:url("../image/calendrier.png") ;  
-    width: 250px;
-    height: 300px;
-    background-position: center;
-    background-size: contain;
-}*/
-.suivi-note {
-  display: flex;
-  gap: 50px;
-  padding: 60px;
-  flex-wrap: wrap;
-}
-
-.suivi-p {
-  font-family: "Be Vietnam Pro";
-  font-size: 25px;
-}
-
-.suivi-icon1 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(188, 49, 100, 0.378);
-}
-
-.suivi-icon2 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(211, 139, 30, 0.669);
-}
-
-.suivi-icon3 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgb(30, 199, 211);
-}
-
-@media screen and (max-width: 425px) {
-  .suivi-calendrier {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+@media (min-width: 768px) {
+  .desktop {
+    /*position: fixed;
     width: 100%;
+    bottom: 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .calendrier {
-    width: 80%;
+  nav {
+    background-color: #F8C471;
+    display: flex;
   }
-  .suivi-note {
-    padding: 30px;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    cursor: pointer;
+  }
+  .connexion-partenaire {
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    cursor: pointer;
+  }
+  .reseaux {
+    display: flex;
+  }
+  .reseau {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 15px;
+    font-size: 2 rem;
+    border: 2px solid;
+    border-radius: 50px;
+  }
+  .mobile {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
