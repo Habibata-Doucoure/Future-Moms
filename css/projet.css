@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .body-projet {
   background-size: auto; /* je choisis auto à la place de cover sinon le bas du
    background sera trop clair et on ne verra plus très bien les icones
@@ -23,6 +24,7 @@
     display: flex;
     gap:20px; /*Ecarte les élements du container*/
 }
+
 
 .icone-projet {
   display: flex;

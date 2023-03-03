@@ -14,12 +14,23 @@ $police2: "Mansalva";
 
 
 body {
-    background-image:url(../image/background-image.png);
+    background-image:url("../image/background-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $police1;
     
  }
+ 
+
+ .en-tete{
+    background-color: #F8C471;
+    font-family: $police2;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 
  .en-tete {
     background-color: #F8C471;
@@ -35,11 +46,9 @@ body {
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     width: 100%;
     cursor: pointer;
     background-color: $Jaune;
-
 }
 
 
@@ -47,14 +56,17 @@ body {
     display: none;
 }
 
+
+
 .icone-mobile {
    justify-content: space-around;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-    width: 100%;
+   width: 100%;
 
 }
+
 
 .icone-nav {
     background-color: #fadbd8;
@@ -83,8 +95,23 @@ body {
   padding: 5px;
 }
 
+.icone-mobile a{
+    color: black;
+    text-decoration: none;
+}
 
- 
+.en-tete a{
+    color: black;
+    text-decoration: none;
+}
+
+.en-tete-texte{
+    font-size: 25px;
+}
+
+.en-tete{
+    padding: 10px;
+}
 
 
 @import "accueil.scss";
@@ -96,6 +123,8 @@ body {
 
 
 
+
+
 @media ( min-width : 768px ) {
    
     .desktop {
@@ -103,10 +132,11 @@ body {
         width: 100%;
         bottom: 0;*/
         display: flex;
+        height: 60px;
         align-items: center;
         justify-content: space-around;
         height: 60px;
-        
+      
     }
 
     nav {
@@ -116,10 +146,15 @@ body {
 
  /*Enlever le soulignement du lien hypertexte et enlever la couleur bleu du lien*/
     .desktop a {
+
         text-decoration: none;
         color: black;
     }
     
+    .en-tete{
+        display: none;
+    }
+
     ul{
         list-style-type: none;
         display: flex;
@@ -157,7 +192,6 @@ body {
      
      .reseaux{
          display: flex;
-      
      }
 
      .reseau {
@@ -168,7 +202,9 @@ body {
          border: 2px solid;
          border-radius: 50px;
         
+
      }
+
 
      .mobile {
         display: none;
@@ -179,7 +215,9 @@ body {
      }
     
  }
-    
+
+
+
 
 
 
