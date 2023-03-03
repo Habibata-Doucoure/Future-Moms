@@ -3,14 +3,13 @@
     margin: 0;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
 
 $Jaune: #F8C471;
-$police1: "Be Vietnam Pro";
+$police1: "Roboto Serif";
 $police2: "Mansalva";
-$main: pointer;
+
 
 
 body {
@@ -19,6 +18,17 @@ body {
     font-family: $police1;
     
  }
+ 
+
+ .en-tete{
+    background-color: #F8C471;
+    font-family: $police2;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 
 
 .mobile {
@@ -26,76 +36,51 @@ body {
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    width: 85%;
-    cursor: $main;
-}
-
-
-.connexion-partenaire {
-    font-size: 30px;
-    display: flex;
-    justify-content: right;
-    
-
-    text-align: center;
     width: 100%;
+    cursor: pointer;
+    background-color: $Jaune;
+    text-align: center;
 }
 
 .desktop{
     display: none;
 }
 
+
+
 .icone-mobile {
    justify-content: space-around;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-    width: 100%;
+   width: 100%;
 
 }
 
+.icone-nav{
+    border-radius: 5px;
+    background-color: #FADBD8;
 
+}
 
- 
+.icone-mobile a{
+    color: black;
+    text-decoration: none;
+}
 
+.en-tete a{
+    color: black;
+    text-decoration: none;
+}
 
-footer {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    
-    
- }
- 
- footer ul {
-     list-style-type: none;
-     display: flex;
-     justify-content: space-between;
-     width: 120%;
-     cursor: pointer;
- }
- 
- .reseaux{
-     display: flex;
- }
- .reseau {
-     display: flex;
-     justify-content: flex-end;
-     color: black;
-     padding:15px;
-     font-size: 2 rem;
-     border: 2px solid;
-     border-radius: 50px;
- }
- 
- @media  (max-width: 1440px) {
-   /* nav{
-        position: fixed;
-	    width: 100%;
-	    top: 0;
-    }*/
- }
- 
+.en-tete-texte{
+    font-size: 25px;
+}
+
+.en-tete{
+    padding: 10px;
+}
+
 
 @import "accueil.scss";
 @import "login.scss";
@@ -104,32 +89,40 @@ footer {
 @import "partenaire.scss";
 
 
+
+
 @media ( min-width : 768px ) {
    
     .desktop {
         /*position: fixed;
         width: 100%;
         bottom: 0;*/
-    
-       
         display: flex;
+        height: 60px;
         align-items: center;
-        justify-content: space-between;
-        
-        
+        justify-content: space-around;     
     }
 
     nav {
         background-color: $Jaune;
         display: flex;
     }
+
+    .desktop a{
+        text-decoration: none;
+        color: black;
+    }
     
+    .en-tete{
+        display: none;
+    }
+
     ul{
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
-        width: 85%;
-        cursor: $main;
+        justify-content: space-around;
+        width: 100%;
+        cursor: pointer;
     }
     
     
@@ -146,6 +139,7 @@ footer {
         display: flex; 
         justify-content: space-between;
         align-items: center;
+        background-color: wheat;
        
      }
      
@@ -155,21 +149,24 @@ footer {
          justify-content: space-between;
          width: 120%;
          cursor: pointer;
+         gap: 10px;
      }
      
      .reseaux{
          display: flex;
+         
      }
 
      .reseau {
          display: flex;
          justify-content: flex-end;
          color: black;
-         padding:15px;
-         font-size: 2 rem;
+         padding:10px;
          border: 2px solid;
          border-radius: 50px;
+         
      }
+
 
      .mobile {
         display: none;
@@ -177,7 +174,8 @@ footer {
      
 
  }
- 
+
+
 
 
 
