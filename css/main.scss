@@ -3,8 +3,9 @@
     margin: 0;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
 
 $Jaune: #F8C471;
 $police1: "Roboto Serif";
@@ -15,6 +16,7 @@ $police2: "Mansalva";
 body {
     background-image:url("../image/background-image.png");
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: $police1;
     
  }
@@ -30,6 +32,14 @@ body {
     
 }
 
+ .en-tete {
+    background-color: #F8C471;
+    font-family:$police2 ;
+    gap:15px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .mobile {
     position: fixed;
@@ -39,8 +49,8 @@ body {
     width: 100%;
     cursor: pointer;
     background-color: $Jaune;
-    text-align: center;
 }
+
 
 .desktop{
     display: none;
@@ -57,10 +67,32 @@ body {
 
 }
 
-.icone-nav{
-    border-radius: 5px;
-    background-color: #FADBD8;
 
+.icone-nav {
+    background-color: #fadbd8;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+/* propriétés pour que le lien hypertexte ne rendent pas les icones bleu
+ et que la ligne du lien ne soit pas là*/
+.icone-mobile a {
+    text-decoration: none;
+     color: black;
+}
+
+.en-tete a {
+    text-decoration: none;
+     color: black;
+}
+
+.en-tete-texte {
+    font-size: 25px;
+}
+
+/* pour que le nom du site et le logo ne soit pas collé aux bords*/
+.en-tete {
+  padding: 5px;
 }
 
 .icone-mobile a{
@@ -87,6 +119,8 @@ body {
 @import "suivi.scss";
 @import "projet.scss";
 @import "partenaire.scss";
+@import "formulaire.scss";
+
 
 
 
@@ -100,7 +134,9 @@ body {
         display: flex;
         height: 60px;
         align-items: center;
-        justify-content: space-around;     
+        justify-content: space-around;
+        height: 60px;
+      
     }
 
     nav {
@@ -108,7 +144,9 @@ body {
         display: flex;
     }
 
-    .desktop a{
+ /*Enlever le soulignement du lien hypertexte et enlever la couleur bleu du lien*/
+    .desktop a {
+
         text-decoration: none;
         color: black;
     }
@@ -154,17 +192,17 @@ body {
      
      .reseaux{
          display: flex;
-         
      }
 
      .reseau {
          display: flex;
          justify-content: flex-end;
          color: black;
-         padding:10px;
+         padding: 10px;
          border: 2px solid;
          border-radius: 50px;
-         
+        
+
      }
 
 
@@ -172,8 +210,12 @@ body {
         display: none;
      }
      
-
+     .en-tete {
+        display: none;
+     }
+    
  }
+
 
 
 
