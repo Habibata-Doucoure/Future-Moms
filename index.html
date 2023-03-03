@@ -12,13 +12,14 @@
 
     <body>
 
-       
+       <!--Le fa-3x permet d'aggrangir l'icone, 
+        j'aurais aussi pu mettre 2x si je veux que ce soit moins grand-->
         <nav class="mobile">
             <div class="icone-mobile">
-                <button class="icone-nav" onclick="window.location.href ='https://waytolearnx.com/2019/07/comment-creer-un-lien-avec-un-bouton-html.html' ;"><i class="fa-solid fa-children"></i></button>
-                <button class="icone-nav"><i class="fa-solid fa-calendar-days"></i> </button>
-                <button class="icone-nav"><i class="fa-solid fa-list-check"></i></button>
-                <button class="icone-nav"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="icone-nav"><a href="partenaire.html"><i class="fa-solid fa-children fa-2x"></i></a></div>
+                <div class="icone-nav"><a href="suivi.html"><i class="fa-solid fa-calendar-days fa-2x"></i></a> </div>
+                <div class="icone-nav"><a href="partenaire.html"><i class="fa-solid fa-list-check fa-2x"></i></a></div>
+                <div class="icone-nav"><a href="http://www.example.com"><i class="fa-solid fa-ellipsis-vertical fa-2x "></i></a></div>
              
         </nav>
 
@@ -26,25 +27,32 @@
          <!-- nav: connexion = logo-->
         <nav class="desktop">
             <ul> 
-                <li>Suivi personnalisé</li>
-                <li>Projet de naissance</li>
-                <li>TOI+MOI</li>
-                <li>Blog</li>
-                <li>Newsletter</li>
-                <li class="connexion"><i class="fa-solid fa-user-group"></i></li>
+                <li><a href="partenaire.html">TOI+MOI</a></li>
+                <li><a href="suivi.html">Suivi personnalisé</a></li>
+                <li><a href="projet.html">Projet de naissance</a></li>
+                <li><a href="http://www.example.com" title="explication du lien">Blog</a></li>
+                <li><a href="http://www.example.com" title="explication du lien">Newsletter</a></li>
+                <li class="connexion"><a href="login.html"><i class="fa-solid fa-user-group fa-2x"></i></a></li>
             </ul>  
 
         </nav>
+         
+        <!--Barre du haut en version mobile-->
+        <div class="en-tete">
+            <p class="en-tete-texte"><a href="index.html" >Bloom in Two</a></p>
+           <a href="login.html"> <i class="fa-solid fa-user-group fa-2x"></a></i>
+        </div>
+
 
         <section></section>
         
         <footer class="desktop">
             <div class="rgpd">
                 <ul class="footerList">
-                    <li>Contact</li>
-                    <li>FAQ</li>
-                    <li>Mentions légales</li>
-                    <li>Politique de confidentialité </li>
+                    <li><a href="http://www.example.com">Contact</a></li>
+                    <li><a href="http://www.example.com">FAQ</a></li>
+                    <li><a href="http://www.example.com">Mentions légales</a></li>
+                    <li><a href="http://www.example.com">Politique de confidentialité</a></li>
                 </ul>
             </div>
             
@@ -57,11 +65,6 @@
         </div>
         </footer>
 
-
-           
-    
-
     </body>
-
 
 </html>
