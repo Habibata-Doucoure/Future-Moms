@@ -9,7 +9,7 @@
 body {
   background-image: url("../image/background-image.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover;*/
   font-family: "Roboto Serif";
 }
 
@@ -206,7 +206,6 @@ body {
   .image-accueil {
     background-image: url(../image/logo-couple.jpg);
     background-position: center;
-    background-size: contain;
     min-height: 300px;
     margin: auto;
     background-repeat: no-repeat;
@@ -477,6 +476,7 @@ background sera trop clair et on ne verra plus très bien les icones*/
   .titre-projet {
     font-size: 70px;
     font-family: "Roboto Serif";
+    padding-top: 50px;
   }
   .cercle-projet img {
     width: 250px;
